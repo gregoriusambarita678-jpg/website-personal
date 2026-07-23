@@ -27,3 +27,57 @@
     border-radius: 8px;
     font-size: 15px;
 }
+
+
+.contact-section {
+  background-color: rgb(30, 30, 131); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.contact-card {
+  background-color: rgba(255, 255, 255, 0.05); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px 20px;
+  height: 100%;
+  transition: all 0.3s ease-in-out; 
+  backdrop-filter: blur(10px); 
+}
+
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #0d6efd;
+  box-shadow: 0 10px 30px rgba(13, 110, 253, 0.15); 
+}
+
+
+.contact-card i {
+  font-size: 2.5rem; 
+  color: #0d6efd; 
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+.contact-card:hover i {
+  transform: scale(1.1);
+}
+
+
+.contact-card h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  color: #a3a3a3;
+  line-height: 1.5;
+}

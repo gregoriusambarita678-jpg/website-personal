@@ -10,7 +10,7 @@
   <body>
 
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-warning">
+    <nav class="navbar navbar-expand-lg bg-warning fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Gregorius.Com</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,16 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
+          <a class="nav-link" href="#aboutme">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="#personal">Personal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -33,28 +39,37 @@
 </nav>
     <!--end navbar-->
 
+  <!--profil-->
+<section class="bg-info text-white text-center mt-5 py-5">
+    <img src="image5.jpeg" alt=""
+        class="rounded-circle border border-4 border-white mb-3"
+        width="150"
+        height="200">
 
-    <div class="container-fluid mt-3 bg-primary">
-  <div class="text-center">
-    <img src="image4.jpeg" alt="" class="rounded-circle" width="150">
-    <h3 class="">Gregorius Anugrah Ambarita</h3>
-    <h4 class="">Software Engineering </h4>
-  </div>
-</div>
+    <h1 class="fw-bold">
+        Gregorius Anugrah Ambarita
+    </h1>
+
+    <h5 class="text-light">
+        Fresh Graduate Software Engineer
+    </h5>
+</section>
+  <!--end profil-->
 
 <!--About me-->
-<section class="container my-5">
+<section class="container my-5 "id=aboutme>
         <div class="row align-items-center">
             <div class="col-md-6">
                 <h2>About Me</h2>
-              <p>Saya adalah seorang Software Engineer yang berdedikasi dalam menciptakan aplikasi web yang efisien. Saya memiliki minat besar pada teknologi terbaru dan pemecahan masalah teknis yang menantang. Bisa merancang, menulis, dan menguji kode untuk membangun perangkat lunak atau aplikasi.</p>
+              <p>Perkenalkan nama saya adalah Gregorius Anugrah Ambarita.Saya adalah seorang Software Engineer yang berdedikasi dalam menciptakan aplikasi web yang efisien. Saya memiliki minat besar pada teknologi terbaru dan pemecahan masalah teknis yang menantang. Bisa merancang, menulis, dan menguji kode untuk membangun perangkat lunak atau aplikasi.</p>
             </div>
         </div>
     </section>
     <!--end About me-->
 
+
 <!--Perkenalan-->
-    <div class="container">
+    <div class="container"id=personal>
     <div class="card blue-card">
         <h2 class="text-center">Personal Information</h2>
         <div class="info-list">
@@ -67,6 +82,86 @@
     </div>
     </div>
     <!--end Perkenalan -->
+
+    <!--my project -->
+    <div class="container mt-3 text-center"id=project>
+      <h2>My Project</h2>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="WEB BERITA.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Web berita</h5>
+    <p class="card-text">Project pembuatan web berita</p>
+    
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="learning.jpg" class="card-img-top" alt="..." width="">
+  <div class="card-body">
+    <h5 class="card-title">Learning</h5>
+    <p class="card-text">Tugas uas hci membuat makalah Interaksi Manusia dan Komputer (IMK) pada Platform Digital: Tinjauan
+Usability dan Evaluasi Heuristik pada Sistem Administrasi, E-Learning,
+dan Media Sosial</p>
+    
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="figma.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Figma</h5>
+    <p class="card-text">Membuat tugas laporan Analisis dan Desain Perangkat Lunak tentang aplikasi pengingat tugas menggunakan figma</p>
+    
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+    <!--end my project -->
+
+    <!--contact us -->
+    <section id="contact" class="contact-section py-5 mt-3" id=contact>
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="eyebrow text-white-50">Hubungi Saya</p>
+          <h1 class="text-white">Contact</h1>
+          <p class="text-white-50">Terbuka untuk kolaborasi, magang, maupun sekadar berdiskusi.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center text-center">
+          <div class="col-md-4">
+            <div class="contact-card">
+              <i class="bi bi-envelope-fill"></i>
+              <h6>Email</h6>
+              <p class="mb-0">gregoriusanugrah@email.com</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-card">
+              <i class="bi bi-geo-alt-fill"></i>
+              <h6>Domisili</h6>
+              <p class="mb-0">Medan, Sumatera Utara</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-card">
+              <i class="bi bi-mortarboard-fill"></i>
+              <h6>Pendidikan</h6>
+              <p class="mb-0">Teknik Rekayasa Perangkat Lunak</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end end contact us -->
+    
+     <footer class="footer bg-info text-white text-center mt-3 py-4">
+        <p>&copy; 2026 Gregorius. Hak Cipta Dilindungi.</p>
+     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
