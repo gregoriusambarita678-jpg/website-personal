@@ -3,165 +3,385 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Gregorius Anugrah - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-warning fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Gregorius.Com</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutme">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#personal">Personal</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#project">Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <!--end navbar-->
-
-  <!--profil-->
-<section class="bg-info text-white text-center mt-5 py-5">
-    <img src="image5.jpeg" alt=""
-        class="rounded-circle border border-4 border-white mb-3"
-        width="150"
-        height="200">
-
-    <h1 class="fw-bold">
-        Gregorius Anugrah Ambarita
-    </h1>
-
-    <h5 class="text-light">
-        Fresh Graduate Software Engineer
-    </h5>
-</section>
-  <!--end profil-->
-
-<!--About me-->
-<section class="container my-5 "id=aboutme>
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <h2>About Me</h2>
-              <p>Perkenalkan nama saya adalah Gregorius Anugrah Ambarita.Saya adalah seorang Software Engineer yang berdedikasi dalam menciptakan aplikasi web yang efisien. Saya memiliki minat besar pada teknologi terbaru dan pemecahan masalah teknis yang menantang. Bisa merancang, menulis, dan menguji kode untuk membangun perangkat lunak atau aplikasi.</p>
-            </div>
-        </div>
-    </section>
-    <!--end About me-->
-
-
-<!--Perkenalan-->
-    <div class="container"id=personal>
-    <div class="card blue-card">
-        <h2 class="text-center">Personal Information</h2>
-        <div class="info-list">
-            <div class="info-item"><strong>Nama</strong> : Gregorius Anugrah Ambarita</div>
-            <div class="info-item"><strong>Umur</strong> : 19 Tahun</div>
-            <div class="info-item"><strong>Alamat</strong> : Medan</div>
-            <div class="info-item"><strong>Pendidikan</strong> : TRPL</div>
-            <div class="info-item"><strong>Email</strong> : gregoriusanugrah@email.com</div>
-        </div>
-    </div>
-    </div>
-    <!--end Perkenalan -->
-
-    <!--my project -->
-    <div class="container mt-3 text-center"id=project>
-      <h2>My Project</h2>
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-  <img src="WEB BERITA.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Web berita</h5>
-    <p class="card-text">Project pembuatan web berita</p>
-    
-  </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-  <img src="learning.jpg" class="card-img-top" alt="..." width="">
-  <div class="card-body">
-    <h5 class="card-title">Learning</h5>
-    <p class="card-text">Tugas uas hci membuat makalah Interaksi Manusia dan Komputer (IMK) pada Platform Digital: Tinjauan
-Usability dan Evaluasi Heuristik pada Sistem Administrasi, E-Learning,
-dan Media Sosial</p>
-    
-  </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-  <img src="figma.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Figma</h5>
-    <p class="card-text">Membuat tugas laporan Analisis dan Desain Perangkat Lunak tentang aplikasi pengingat tugas menggunakan figma</p>
-    
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-    <!--end my project -->
-
-    <!--contact us -->
-    <section id="contact" class="contact-section py-5 mt-3" id=contact>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-white">
       <div class="container">
-        <div class="text-center mb-5">
-          <p class="eyebrow text-white-50">Hubungi Saya</p>
-          <h1 class="text-white">Contact</h1>
-          <p class="text-white-50">Terbuka untuk kolaborasi, magang, maupun sekadar berdiskusi.</p>
-        </div>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="logo3.png" alt="Logo Gregorius Anugrah" height="45" class="me-2" style="object-fit: contain;">
+        </a>
 
-        <div class="row g-4 justify-content-center text-center">
-          <div class="col-md-4">
-            <div class="contact-card">
-              <i class="bi bi-envelope-fill"></i>
-              <h6>Email</h6>
-              <p class="mb-0">gregoriusanugrah@email.com</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="contact-card">
-              <i class="bi bi-geo-alt-fill"></i>
-              <h6>Domisili</h6>
-              <p class="mb-0">Medan, Sumatera Utara</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="contact-card">
-              <i class="bi bi-mortarboard-fill"></i>
-              <h6>Pendidikan</h6>
-              <p class="mb-0">Teknik Rekayasa Perangkat Lunak</p>
-            </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#personal">Personal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Profil -->
+    <section class="text-white text-center profile-section py-5">
+      <div class="container pt-5">
+        <!-- Foto Profil Diperbarui Di Sini -->
+        <img src="Profil2.jpeg" alt="Foto Profil" class="rounded-circle border border-4 border-white mb-3 shadow" width="200" height="200" style="object-fit: cover; object-position: top;">
+        <h1 class="fw-bold">Gregorius Anugrah Ambarita</h1>
+        <h5 class="tagline-text">Fresh Graduate Software Engineer</h5>
+      </div>
+    </section>
+    <!-- End Profil -->
+
+    <!-- About Me -->
+    <section class="container my-5" id="aboutme">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="mb-3 fw-bold section-title">About Me</h2>
+          <p class="text-muted fs-5">Perkenalkan nama saya adalah Gregorius Anugrah Ambarita. Saya adalah seorang Software Engineer yang berdedikasi dalam menciptakan aplikasi web yang efisien. Saya memiliki minat besar pada teknologi terbaru dan pemecahan masalah teknis yang menantang. Bisa merancang, menulis, dan menguji kode untuk membangun perangkat lunak atau aplikasi.</p>
+        </div>
+      </div>
+    </section>
+    <!-- End About Me -->
+
+    <!-- Personal Information -->
+    <section class="container my-5" id="personal">
+      <div class="card p-4 shadow-sm border-0 personal-card">
+        <h2 class="text-center mb-4 fw-bold section-title">Personal Information</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <ul class="list-group list-group-flush bg-transparent">
+              <li class="list-group-item bg-transparent d-flex justify-content-between"><strong>Nama:</strong> <span>Gregorius Anugrah Ambarita</span></li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between"><strong>Umur:</strong> <span>19 Tahun</span></li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between"><strong>Alamat:</strong> <span>Medan</span></li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between"><strong>Pendidikan:</strong> <span>TRPL</span></li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between"><strong>Email:</strong> <span>gregoriusanugrah@email.com</span></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <!--end end contact us -->
-    
-     <footer class="footer bg-info text-white text-center mt-3 py-4">
-        <p>&copy; 2026 Gregorius. Hak Cipta Dilindungi.</p>
-     </footer>
+    <!-- End Personal Information -->
+
+    <!-- Skills Section -->
+    <section class="container my-5" id="skills">
+      <h2 class="text-center mb-4 fw-bold section-title">My Skills & Expertise</h2>
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Skill Item 1 -->
+        <div class="col-md-4">
+          <div class="skill-box card h-100 p-4 border-0 shadow-sm">
+            <div class="skill-icon-wrapper mb-3 text-primary fs-3">
+              <i class="bi bi-file-code-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-3 text-dark">Frontend Development</h5>
+            <p class="text-muted small mb-4">Menguasai pembuatan tampilan antarmuka web yang responsif dan interaktif.</p>
+            
+            <div class="mb-3">
+              <div class="d-flex justify-content-between small fw-semibold mb-1">
+                <span>HTML5 / CSS3</span>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="mb-2">
+              <div class="d-flex justify-content-between small fw-semibold mb-1">
+                <span>JavaScript & Bootstrap</span>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Item 2 -->
+        <div class="col-md-4">
+          <div class="skill-box card h-100 p-4 border-0 shadow-sm">
+            <div class="skill-icon-wrapper mb-3 text-primary fs-3">
+              <i class="bi bi-tools"></i>
+            </div>
+            <h5 class="fw-bold mb-3 text-dark">Engineering & Tools</h5>
+            <p class="text-muted small mb-4">Penggunaan perangkat pendukung pengembangan perangkat lunak dan desain.</p>
+            
+            <div class="mb-3">
+              <div class="d-flex justify-content-between small fw-semibold mb-1">
+                <span>Git & GitHub</span>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="mb-2">
+              <div class="d-flex justify-content-between small fw-semibold mb-1">
+                <span>Figma (UI/UX Design)</span>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Item 3 -->
+        <div class="col-md-4">
+          <div class="skill-box card h-100 p-4 border-0 shadow-sm">
+            <div class="skill-icon-wrapper mb-3 text-primary fs-3">
+              <i class="bi bi-lightbulb-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-3 text-dark">Core Competencies</h5>
+            <p class="text-muted small mb-4">Kemampuan analitis dan kerja sama tim dalam menyelesaikan masalah.</p>
+            
+            <div class="mb-3">
+              <div class="d-flex justify-content-between small fw-semibold mb-1">
+                <span>Problem Solving</span>
+                <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="mb-2">
+              <div class="d-flex justify-content-between small fw-semibold mb-1">
+                <span>Team Collaboration</span>
+                <span>88%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- My Project -->
+    <section class="container my-5" id="project">
+      <h2 class="text-center mb-5 fw-bold section-title">My Project</h2>
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Project 1 -->
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+          <a href="https://lestari.kompas.com/read/2026/02/04/132900986/adakami-salurkan-bantuan-kemanusiaan-senilai-rp-1-miliar-untuk-pemulihan?page=all" target="_blank" class="project-link text-decoration-none w-100">
+            <div class="card project-card h-100 shadow-sm border">
+              <img src="Salurkan.jpeg" class="card-img-top" alt="Web Berita" style="height: 160px; object-fit: cover;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold text-dark">Web Berita</h5>
+                  <p class="card-text text-muted small">Project pembuatan web berita interaktif.</p>
+                </div>
+                <div class="mt-3">
+                  <span class="btn btn-outline-custom btn-sm btn-visit w-100 fw-semibold">Kunjungi <i class="bi bi-box-arrow-up-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+          <a href="https://aws.amazon.com/id/what-is/iot/" target="_blank" class="project-link text-decoration-none w-100">
+            <div class="card project-card h-100 shadow-sm border">
+              <img src="images (16).jpeg" class="card-img-top" alt="IoT" style="height: 160px; object-fit: cover;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold text-dark">IoT</h5>
+                  <p class="card-text text-muted small">Teknologi yang menghubungkan benda fisik ke internet.</p>
+                </div>
+                <div class="mt-3">
+                  <span class="btn btn-outline-custom btn-sm btn-visit w-100 fw-semibold">Kunjungi <i class="bi bi-box-arrow-up-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+          <a href="https://www.figma.com/design/qVpVBub8hP4tDFzFV2EMvO/Untitled?node-id=0-1&t=BSpi9T61RXE9nCtK-1" target="_blank" class="project-link text-decoration-none w-100">
+            <div class="card project-card h-100 shadow-sm border">
+              <img src="figma.png" class="card-img-top" alt="UI/UX Design" style="height: 160px; object-fit: cover;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold text-dark">UI/UX</h5>
+                  <p class="card-text text-muted small">Membuat produk digital seperti aplikasi atau situs web.</p>
+                </div>
+                <div class="mt-3">
+                  <span class="btn btn-outline-custom btn-sm btn-visit w-100 fw-semibold">Kunjungi <i class="bi bi-box-arrow-up-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+          <a href="https://www.ppmschool.ac.id/sistem-manajemen/" target="_blank" class="project-link text-decoration-none w-100">
+            <div class="card project-card h-100 shadow-sm border">
+              <img src="images (17).jpeg" class="card-img-top" alt="System Management" style="height: 160px; object-fit: cover;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold text-dark">System Management</h5>
+                  <p class="card-text text-muted small">Perancangan database dan sistem informasi berbasis web.</p>
+                </div>
+                <div class="mt-3">
+                  <span class="btn btn-outline-custom btn-sm btn-visit w-100 fw-semibold">Kunjungi <i class="bi bi-box-arrow-up-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+          <a href="https://www.dicoding.com/blog/metode-sdlc/" target="_blank" class="project-link text-decoration-none w-100">
+            <div class="card project-card h-100 shadow-sm border">
+              <img src="images (18).jpeg" class="card-img-top" alt="System Management" style="height: 160px; object-fit: cover;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold text-dark">SDLC</h5>
+                  <p class="card-text text-muted small">Metode SDLC Dalam Pengembangan Software.</p>
+                </div>
+                <div class="mt-3">
+                  <span class="btn btn-outline-custom btn-sm btn-visit w-100 fw-semibold">Kunjungi <i class="bi bi-box-arrow-up-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- End My Project -->
+
+  <!-- Contact Us -->
+    <section id="contact" class="contact-section py-5 text-white">
+      <div class="container pt-4">
+        <div class="text-center mb-5">
+          <p class="text-accent text-uppercase tracking-wide fw-bold mb-1">Hubungi Saya</p>
+          <h2 class="fw-bold fs-1">Let's Connect!</h2>
+          <p class="text-light opacity-75">Tertarik untuk berkolaborasi atau memiliki pertanyaan? Jangan ragu untuk mengirim pesan.</p>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+          
+          <!-- Contact Information -->
+          <div class="col-lg-5">
+            <div class="contact-info p-4 rounded shadow h-100" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+              <h4 class="fw-bold mb-4">Informasi Kontak</h4>
+              
+              <!-- Email -->
+              <div class="d-flex align-items-center mb-4">
+                <div class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm" style="width: 50px; height: 50px;">
+                  <i class="bi bi-envelope-fill fs-4"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1 fw-bold">Email</h6>
+                  <a href="mailto:gregoriusambarita678@gmail.com" class="text-white text-decoration-none opacity-75">gregoriusambarita678@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="d-flex align-items-center mb-4">
+                <div class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm" style="width: 50px; height: 50px;">
+                  <i class="bi bi-geo-alt-fill fs-4"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1 fw-bold">Lokasi</h6>
+                  <p class="mb-0 text-white opacity-75">Medan, Sumatera Utara</p>
+                </div>
+              </div>
+
+              <!-- WhatsApp (Opsional) -->
+              <div class="d-flex align-items-center mb-4">
+                <div class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm" style="width: 50px; height: 50px;">
+                  <i class="bi bi-whatsapp fs-4"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1 fw-bold">WhatsApp</h6>
+                  <a href="https://wa.me/6281234567890" target="_blank" class="text-white text-decoration-none opacity-75">+62 812-XXXX-XXXX</a>
+                </div>
+              </div>
+
+              <hr class="border-light opacity-50 my-4">
+              
+              <!-- Social Media -->
+              <h6 class="fw-bold mb-3">Sosial Media</h6>
+              <div class="d-flex gap-3">
+                <a href="https://gregoriusambarita678-jpg.github.io/website-personal/" target="_blank" class="social-icon text-white"><i class="bi bi-github fs-3"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-icon text-white"><i class="bi bi-instagram fs-3"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-6">
+            <div class="contact-form p-4 rounded shadow h-100 bg-white text-dark">
+              <h4 class="fw-bold mb-4" style="color: var(--primary-dark);">Kirim Pesan</h4>
+              <form action="#" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label fw-semibold small">Nama Lengkap</label>
+                  <input type="text" class="form-control bg-light border-0 py-2" id="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-semibold small">Alamat Email</label>
+                  <input type="email" class="form-control bg-light border-0 py-2" id="email" placeholder="nama@email.com" required>
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label fw-semibold small">Pesan</label>
+                  <textarea class="form-control bg-light border-0" id="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                </div>
+                <button type="submit" class="btn w-100 fw-bold py-2 text-white shadow-sm hover-lift" style="background-color: var(--primary-dark);">
+                  Kirim Pesan <i class="bi bi-send-fill ms-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Us -->
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center py-4">
+      <p class="mb-0">&copy; 2026 Gregorius. Hak Cipta Dilindungi.</p>
+    </footer>
+    <!-- End Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>

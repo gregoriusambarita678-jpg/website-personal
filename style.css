@@ -1,83 +1,155 @@
-.container{
-    color: black;
-    
-}
-.blue-card {
-    background-color: #05e5f5;
-    color: black;
-    box-shadow: 0 8px 20px rgba(51, 136, 255, 0.3);
+:root {
+  --primary-dark: #0D47A1;
+  --secondary-blue: #2196F3;
+  --accent-cyan: #90CAF9;
+  --light-mint: #E3F2FD;
 }
 
-.blue-card h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 600;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  background-color: #F8F9FA;
+  overflow-x: hidden;
 }
 
-.info-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.navbar {
+  backdrop-filter: blur(10px);
+  /* Diperbarui ke nilai RGB dari #0D47A1 dengan transparansi */
+  background-color: rgba(13, 71, 161, 0.95) !important; 
+  transition: all 0.3s ease-in-out;
 }
 
-.info-item {
-    background-color: rgba(255, 255, 255, 0.25); 
-    padding: 12px 16px;
-    border-radius: 8px;
-    font-size: 15px;
+.navbar-brand {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  color: white !important;
 }
 
+.logo-badge {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--light-mint));
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.text-accent {
+  color: var(--light-mint) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-radius: 8px;
+  padding: 8px 15px !important; 
+  margin: 0 4px; 
+}
+
+.nav-link:hover, 
+.nav-link.active {
+  color: var(--primary-dark) !important; 
+  background-color: var(--accent-cyan); 
+  transform: translateY(-2px); 
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+.profile-section {
+  background: linear-gradient(135deg, var(--primary-dark), var(--secondary-blue));
+}
+
+.tagline-text {
+  color: var(--accent-cyan);
+}
+
+.section-title {
+  color: var(--primary-dark);
+}
+
+.personal-card {
+  /* Menggunakan warna biru paling terang untuk kartu personal */
+  background-color: var(--light-mint); 
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+      
+.project-card:hover {
+  border-color: var(--secondary-blue) !important;
+  cursor: pointer;
+}
+
+.btn-outline-custom {
+  color: var(--primary-dark);
+  border-color: var(--secondary-blue);
+}
+
+.project-card:hover .btn-visit {
+  background-color: var(--primary-dark);
+  color: var(--light-mint);
+  border-color: var(--primary-dark);
+}
 
 .contact-section {
-  background-color: rgb(30, 30, 131); 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Diperbarui agar menggunakan gradasi palet biru Color Hunt */
+  background: linear-gradient(135deg, var(--primary-dark), var(--secondary-blue));
 }
-
-
 
 .contact-card {
-  background-color: rgba(255, 255, 255, 0.05); 
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 40px 20px;
-  height: 100%;
-  transition: all 0.3s ease-in-out; 
-  backdrop-filter: blur(10px); 
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
 }
-
 
 .contact-card:hover {
-  transform: translateY(-8px);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: #0d6efd;
-  box-shadow: 0 10px 30px rgba(13, 110, 253, 0.15); 
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
 }
 
+.footer {
+  background-color: var(--primary-dark); 
+}
 
-.contact-card i {
-  font-size: 2.5rem; 
-  color: #0d6efd; 
+@media (max-width: 768px) {
+  .profile-img {
+    width: 130px;
+    height: 160px;
+  }
+}
+
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
   display: inline-block;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
 }
 
-
-.contact-card:hover i {
-  transform: scale(1.1);
+.social-icon:hover {
+  transform: translateY(-5px);
+  color: var(--accent-cyan) !important;
 }
 
-
-.contact-card h6 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 8px;
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-card p {
-  font-size: 0.95rem;
-  color: #a3a3a3;
-  line-height: 1.5;
+.hover-lift:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+  background-color: var(--secondary-blue) !important;
 }
